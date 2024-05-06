@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto auto;
+    padding: 0 4%;
+    text-align: center;
+    font-family: Rubik;
+}
+
+body {
+    margin: 0;
+    color: #5B4A28;
+    background-color: #fffdf5;
+    font-family: Rubik;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    width: 100%;
+    background-color: #fffdf5;
+}
+
+.cafe-logo img {
+    width: 134px;
+    height: 100px;
+    align-items: center;
+}
+
+nav {
+    background-color: #fffdf5;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.cta {
+    background-color: #FBAD87;
+    padding: 16px 24px;
+    border-radius: 30px;
+}
+
+.cta a {
+    padding: 16px 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #5B4A28;
+    margin: 0;
+    width: 100%;
+    letter-spacing: 0.1em;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+/* hamburger menu */
+
+#header .hamburger {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger .btn-gNav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 12;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.hamburger .btn-gNav span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #67595E;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.hamburger .btn-gNav span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger .btn-gNav span:nth-child(2) {
+    top: 10px;
+}
+
+.hamburger .btn-gNav span:nth-child(3) {
+    top: 20px;
+}
+
+.hamburger .btn-gNav.open span:nth-child(1) {
+    background: #ffffff;
+    top: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.hamburger .btn-gNav.open span:nth-child(2),
+.hamburger .btn-gNav.open span:nth-child(3) {
+    top: 6px;
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.btn-gNav {
+    display: none;
+}
+
+.gNav {
+    background-color: #fffdf5;
+    display: flex;
+    align-items: center;
+}
+
+.gNav-menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+/* mainvisual */
+
+#mainvisual {
+    padding-top: 100px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.top-message {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #fffdf5;
+    text-shadow: 1px 1px 30px #5B4A28;
+}
+
+#mainvisual img {
+    width: 100%;
+    max-width: 1920px;
+    object-fit: cover;
+}
+
+/* about */
+
+h1 {
+    font-size: 48px;
+    font-family: Rubik;
+}
+
+h2 {
+    font-size: 32px;
+    color: #FBAD87;
+    font-family: Rubik;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.about-image {
+    padding-top: 54px;
+}
+
+.line {
+    animation-name:fadeInAnime;
+animation-duration:3s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* history */
+
+#history {
+    padding-top: 64px;
+}
+
+.history-image1 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.history-image2 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.history-image3 {
+    padding-top: 30px;
+}
+
+/* menu */
+
+#menu {
+    padding-top: 64px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.service-box {
+    text-align: center;
+    padding: 0 8px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.menu-img img{
+    border-radius: 5px;
+}
+/* contact */
+
+#contact {
+    padding-top: 64px;
+    padding-bottom: 72px;
+}
+
+.contact-text {
+    padding-bottom: 32px;
+}
+
+input[type='submit'] {
+    background-color: #FBAD87;
+    padding: 16px 36px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #5B4A28;
+    border: none;
+}
+
+/* footer */
+
+#footer {
+    background-color: #8DB5CC;
+    width: 100%;
+    text-align: center;
+}
+
+#footer img {
+    width: 134px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+#footer .contact-info {
+    color: #fffdf5;
+    font-size: 14px;
+}
+
+#footer .copylight {
+    color: #fffdf5;
+    font-size: 14px;
+}
+
+p {
+    margin: 0;
+}
+
+.snsicon {
+    padding-top: 16px;
+}
+
+.snsicon a {
+    font-size: 24px;
+    color: #fffdf5;
+}
+
+#footer .copylight {
+    padding-top: 42px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+/* menu page */
+
+.menu-category {
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
+.menu-category a:hover {
+    text-decoration: underline;
+}
+
+.menu-title {
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+.description {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.main-title {
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.price {
+    padding-top: 8px;
+}
+
+.service-container {
+    padding-top: 16px;
+}
+
+#home {
+    padding: 80px 0;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        color: #FBAD87;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+
+    .about-image img {
+        width: 360px;
+        height: 200px;
+    }
+
+    /* hamburger menu */
+
+    .btn-gNav {
+        display: block;
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+
+    .gNav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fffdf5;
+        font-size: 16px;
+        box-sizing: border-box;
+        z-index: 10;
+        padding-top: 50plox;
+        transition: .3s;
+    }
+
+    .gNav.open {
+        right: 0;
+    }
+
+    .gNav .gNav-menu {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        /*justify-content: center;*/
+    }
+
+    .gNav-menu {
+        padding-top: 8px;
+    }
+
+    .gNav .gNav-menu li {
+        width: 86%;
+        padding-top: 42px;
+    }
+
+}

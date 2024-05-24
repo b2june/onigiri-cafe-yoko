@@ -280,6 +280,7 @@ input[type='submit'] {
     font-weight: lighter;
     color: #5B4A28;
     border: none;
+    letter-spacing: 0.1em;
 }
 
 /* footer */
